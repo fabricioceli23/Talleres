@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta GAD Parroquial El Limo</title>
+</head>
+<body>
+    <h1>Encuesta a la Comunidad del GAD Parroquial El Limo</h1>
+    <form action="mailto:respuestasencuesta30@gmail.com" method="post" enctype="text/plain">
+        <h2>Información General</h2>
+
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        
+        <label for="edad">¿Cuál es su edad?</label><br>
+        <select id="edad" name="edad">
+            <option value="Menos de 18 años">Menos de 18 años</option>
+            <option value="18-25 años">18-25 años</option>
+            <option value="26-35 años">26-35 años</option>
+            <option value="36-45 años">36-45 años</option>
+            <option value="46-60 años">46-60 años</option>
+            <option value="Más de 60 años">Más de 60 años</option>
+        </select><br><br>
+
+        <label for="ocupacion">¿Cuál es su ocupación?</label><br>
+        <select id="ocupacion" name="ocupacion">
+            <option value="Estudiante">Estudiante</option>
+            <option value="Trabajador(a) del sector público">Trabajador(a) del sector público</option>
+            <option value="Trabajador(a) del sector privado">Trabajador(a) del sector privado</option>
+            <option value="Emprendedor(a)">Emprendedor(a)</option>
+            <option value="Desempleado(a)">Desempleado(a)</option>
+            <option value="Jubilado(a)">Jubilado(a)</option>
+            <option value="Otro">Otro</option>
+        </select><br><br>
+
+        <h2>Uso de Tecnología</h2>
+        <label for="uso_internet">¿Con qué frecuencia utiliza internet?</label><br>
+        <select id="uso_internet" name="uso_internet">
+            <option value="Diario">Diario</option>
+            <option value="Varias veces a la semana">Varias veces a la semana</option>
+            <option value="Una vez a la semana">Una vez a la semana</option>
+            <option value="Pocas veces al mes">Pocas veces al mes</option>
+            <option value="Nunca">Nunca</option>
+        </select><br><br>
+
+        <label for="dispositivos">¿Qué dispositivos tecnológicos utiliza regularmente? (Seleccione todos los que apliquen)</label><br>
+        <input type="checkbox" id="computadora_escritorio" name="dispositivos" value="Computadora de escritorio">
+        <label for="computadora_escritorio">Computadora de escritorio</label><br>
+        <input type="checkbox" id="laptop" name="dispositivos" value="Laptop">
+        <label for="laptop">Laptop</label><br>
+        <input type="checkbox" id="tableta" name="dispositivos" value="Tableta">
+        <label for="tableta">Tableta</label><br>
+        <input type="checkbox" id="telefono_inteligente" name="dispositivos" value="Teléfono inteligente">
+        <label for="telefono_inteligente">Teléfono inteligente</label><br>
+        <input type="checkbox" id="ninguno" name="dispositivos" value="Ninguno">
+        <label for="ninguno">Ninguno</label><br><br>
+
+        <label for="plataformas">¿Está familiarizado(a) con el uso de las siguientes plataformas? (Seleccione todos los que apliquen)</label><br>
+        <input type="checkbox" id="facebook" name="plataformas" value="Facebook">
+        <label for="facebook">Facebook</label><br>
+        <input type="checkbox" id="whatsapp" name="plataformas" value="WhatsApp">
+        <label for="whatsapp">WhatsApp</label><br>
+        <input type="checkbox" id="correo" name="plataformas" value="Correo electrónico">
+        <label for="correo">Correo electrónico</label><br>
+        <input type="checkbox" id="youtube" name="plataformas" value="YouTube">
+        <label for="youtube">YouTube</label><br>
+        <input type="checkbox" id="ninguna" name="plataformas" value="Ninguna">
+        <label for="ninguna">Ninguna</label><br><br>
+
+        <h2>Comunicación y Acceso a la Información</h2>
+        <label for="preferencia_info">¿Cómo prefiere recibir información sobre las actividades y servicios del GAD parroquial?</label><br>
+        <select id="preferencia_info" name="preferencia_info">
+            <option value="Página web del GAD">Página web del GAD</option>
+            <option value="Redes sociales">Redes sociales (Facebook, Instagram, etc.)</option>
+            <option value="Correo electrónico">Correo electrónico</option>
+            <option value="Mensajes de texto">Mensajes de texto (SMS)</option>
+            <option value="Boletines impresos">Boletines impresos</option>
+            <option value="Otro">Otro</option>
+        </select><br><br>
+
+        <label for="conocimiento_web">¿Está al tanto de la existencia de la página web del GAD parroquial?</label><br>
+        <input type="radio" id="conocimiento_web_si" name="conocimiento_web" value="Sí">
+        <label for="conocimiento_web_si">Sí</label><br>
+        <input type="radio" id="conocimiento_web_no" name="conocimiento_web" value="No">
+        <label for="conocimiento_web_no">No</label><br><br>
+
+        <label for="frecuencia_web">¿Con qué frecuencia visita la página web del GAD parroquial?</label><br>
+        <select id="frecuencia_web" name="frecuencia_web">
+            <option value="Diario">Diario</option>
+            <option value="Semanalmente">Semanalmente</option>
+            <option value="Mensualmente">Mensualmente</option>
+            <option value="Raramente">Raramente</option>
+            <option value="Nunca">Nunca</option>
+        </select><br><br>
+
+        <label for="informacion_web">¿Qué tipo de información le gustaría encontrar en la página web del GAD parroquial? (Seleccione todos los que apliquen)</label><br>
+        <input type="checkbox" id="noticias" name="informacion_web" value="Noticias y actualizaciones">
+        <label for="noticias">Noticias y actualizaciones</label><br>
+        <input type="checkbox" id="servicios" name="informacion_web" value="Información sobre servicios del GAD">
+        <label for="servicios">Información sobre servicios del GAD</label><br>
+        <input type="checkbox" id="calendario" name="informacion_web" value="Calendario de eventos">
+        <label for="calendario">Calendario de eventos</label><br>
+        <input type="checkbox" id="turismo" name="informacion_web" value="Información turística y cultural">
+        <label for="turismo">Información turística y cultural</label><br>
+        <input type="checkbox" id="tramites" name="informacion_web" value="Documentos y trámites en línea">
+        <label for="tramites">Documentos y trámites en línea</label><br>
+        <input type="checkbox" id="otro" name="informacion_web" value="Otro">
+        <label for="otro">Otro</label><br><br>
+
+        <h2>Participación y Satisfacción</h2>
+        <label for="participacion">¿Ha participado alguna vez en las actividades o eventos organizados por el GAD parroquial?</label><br>
+        <input type="radio" id="participacion_si" name="participacion" value="Sí">
+        <label for="participacion_si">Sí</label><br>
+        <input type="radio" id="participacion_no" name="participacion" value="No">
+        <label for="participacion_no">No</label><br><br>
+
+        <label for="satisfaccion">¿Cómo calificaría la comunicación y la información proporcionada por el GAD parroquial?</label><br>
+        <select id="satisfaccion" name="satisfaccion">
+            <option value="Excelente">Excelente</option>
+            <option value="Buena">Buena</option>
+            <option value="Regular">Regular</option>
+            <option value="Mala">Mala</option>
+            <option value="Muy mala">Muy mala</option>
+        </select><br><br>
+
+        <label for="mejoras">¿Qué mejoras sugeriría para la comunicación y los servicios del GAD parroquial?</label><br>
+        <textarea id="mejoras" name="mejoras" rows="4" cols="50"></textarea><br><br>
+
+        <label for="tramites_online">¿Le gustaría tener la opción de realizar trámites y solicitudes al GAD parroquial en línea?</label><br>
+        <input type="radio" id="tramites_online_si" name="tramites_online" value="Sí">
+        <label for="tramites_online_si">Sí</label><br>
+        <input type="radio" id="tramites_online_no" name="tramites_online" value="No">
+        <label for="tramites_online_no">No</label><br><br>
+
+        <label for="otros_servicios">¿Qué otros servicios en línea cree que podrían ser útiles para la comunidad?</label><br>
+        <textarea id="otros_servicios" name="otros_servicios" rows="4" cols="50"></textarea><br><br>
+
+        <h2>Comentarios Adicionales</h2>
+        <label for="comentarios">¿Tiene algún comentario adicional o sugerencia sobre cómo el GAD parroquial puede mejorar el uso de la tecnología para servir mejor a la comunidad?</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
